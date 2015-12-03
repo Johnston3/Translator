@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        
+        android:padding="12dp" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bTranslate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:text="Speak" />
+
+    <TextView
+        android:id="@+id/tvTranslatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bTranslate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="translated text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:paddingLeft="12dp"
+        android:text="Enter Sentence"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/language_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/bTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/language_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Translate" />
+
+<TextView
+    android:id="@+id/author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="18dp"
+    android:text="Translator by James R. Johnston III"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
